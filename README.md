@@ -3,4 +3,4 @@
 ### Todo
 
 1. Add animations (scroll/open)
-2. Bio
+2. Bio description
