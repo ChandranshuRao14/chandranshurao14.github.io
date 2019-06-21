@@ -30,4 +30,30 @@ export default {
 .nav-link{
   font-size: 18px;
 }
+
+.nav-item{
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.nav-item a {
+  position: relative;
+}
+
+.nav-item a::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;;
+  transform-origin: center;
+  transform: translate(-50%, 0) scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-item a:hover::before {
+  transform: translate(-50%, 0) scaleX(1);
+}
 </style>
