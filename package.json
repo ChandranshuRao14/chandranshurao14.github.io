@@ -17,6 +17,7 @@
     "particles.js": "^2.0.0",
     "popper.js": "^1.15.0",
     "vue": "^2.6.10",
+    "vue-pdf": "^4.0.7",
     "vue-typed-js": "^0.1.2"
   },
   "devDependencies": {

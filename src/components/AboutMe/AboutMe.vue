@@ -7,7 +7,7 @@
         </div>
         <div class="row">
             <div class="col-md-4 offset-md-4">
-                <button type="button" class="btn cv-btn"><span><i class="fa-icon fas fa-file-alt"></i></span>View my Resume</button>
+                <a href="./resume.pdf" target="_blank" role="button" class="btn cv-btn"><span><i class="fa-icon fas fa-file-alt"></i></span>View my Resume</a>
             </div>
         </div>
     </div>

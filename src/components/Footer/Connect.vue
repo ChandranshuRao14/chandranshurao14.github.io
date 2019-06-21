@@ -3,14 +3,14 @@
         <div class="container py-5">
             <h3 class="end-banner">Thanks for visiting!</h3>
             <p>Want to get in touch?</p>
-            <button type="button" class="btn contact-btn"><span><i class="fas fa-paper-plane"></i></span> chandranshu.rao @ gmail</button>
+            <a role="button" href="mailto:chandranshu.rao@gmail.com" class="btn contact-btn"><span><i class="fas fa-paper-plane"></i></span> chandranshu.rao @ gmail</a>
             
             <ul class="list-inline list-social text-30">
                 <ConnectLink iconClass="fab fa-github" link="https://github.com/ChandranshuRao14" />
                 <ConnectLink iconClass="fab fa-linkedin" link="https://www.linkedin.com/in/chandranshurao" />
-                <ConnectLink iconClass="fab fa-medium" link="https://github.com/ChandranshuRao14" />
+                <ConnectLink iconClass="fab fa-medium" link="https://medium.com/@anshu.rao" />
             </ul>
-            <p>made using <span><i class="fab fa-vuejs"></i></span> by anshu</p>
+            <p class="repo-link"><a href="https://github.com/ChandranshuRao14/chandranshurao14.github.io" target="_blank">made using <span><i class="fab fa-vuejs"></i></span> by anshu</a></p>
             <span class="copyright">© 2019 Chandranshu Rao</span>
         </div>
     </footer>
@@ -96,6 +96,22 @@ footer{
   h3.end-banner::after {
     width: 10%;
   }
+}
+
+.repo-link a,
+.repo-link a:hover{
+  text-decoration: none;
+}
+
+.repo-link a { color: white; }
+
+.repo-link a:hover { color: #2db742; }
+
+.repo-link:hover{
+  transform-origin: center center;
+  transform: scale(1.1);
+  animation: scale 0.25s ease-in-out forwards;
+  color: #2db742;
 }
 
 </style>
