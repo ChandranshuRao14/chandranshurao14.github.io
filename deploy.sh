@@ -10,6 +10,7 @@ npm run build
 echo "Build successful. Deploying to master"
 
 cd dist
+echo 'chandranshurao.com' > CNAME
 git init
 git add -A
 git commit -m "auto deployment"
