@@ -3,4 +3,4 @@
 ### Todo
 
 1. Add animations (scroll/open)
-2. Bio description
+2. Navbar slide in on mobile

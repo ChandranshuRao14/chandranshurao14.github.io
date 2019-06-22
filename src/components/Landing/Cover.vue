@@ -38,9 +38,18 @@ export default {
   height: 100vh;
   margin-bottom: 0rem !important;
 }
+
 .home-links{
   margin: 0 auto;
   margin-top: 60px;
+}
+
+.scroll-for-more{
+  margin: 0 auto;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0px;
+  font-size: 28px;
 }
 </style>
 

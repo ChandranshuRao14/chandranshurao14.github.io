@@ -25,12 +25,14 @@ export default {
     float: right;
     box-shadow: 1px 2px 8px black;
 }
+
 #image-profile {
     height: auto; 
     width: auto; 
     max-width: 150px; 
     max-height: auto;
 }
+
 @media only screen and (max-width: 600px) {
   .profile{
     margin: 0 auto;
@@ -38,5 +40,4 @@ export default {
     margin-bottom: 25px;
   }
 }
-
 </style>

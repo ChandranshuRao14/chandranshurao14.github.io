@@ -11,7 +11,7 @@
                 <ConnectLink iconClass="fab fa-medium" link="https://medium.com/@anshu.rao" />
             </ul>
             <p class="repo-link"><a href="https://github.com/ChandranshuRao14/chandranshurao14.github.io" target="_blank">made using <span><i class="fab fa-vuejs"></i></span> by anshu</a></p>
-            <span class="copyright">© 2019 Chandranshu Rao</span>
+            <span class="copyright">© 2019 Anshu Rao</span>
         </div>
     </footer>
 </template>
@@ -36,7 +36,9 @@ export default {
     font-size: 12px;
     opacity: 0.6;
 }
+
 h3.end-banner { position: relative; }
+
 h3.end-banner::before,
 h3.end-banner::after{
     position: absolute;
@@ -46,8 +48,11 @@ h3.end-banner::after{
     border-bottom: 5px solid rgba(0, 0, 0, 0.25);
     content: "";
 }
+
 h3.end-banner::after { right: 0; }
+
 h3.end-banner::before { left: 0; }
+
 footer{
     background-color: #39373a;
 }
@@ -61,7 +66,7 @@ footer{
   padding: 0.5em 1em;
   outline: none;
   border: 1px white solid !important;
-  background-color: hsl(236, 32%, 26%);
+  background-color: #39373a;
   overflow: hidden;
   transition: color 0.4s ease-in-out;
   margin-top: 20px;
@@ -83,12 +88,23 @@ footer{
   transition: transform 0.45s ease-in-out;
 }
 
-.contact-btn:hover {
-  cursor: pointer;
-}
+@media (hover: hover) {
+  .contact-btn:hover {
+    cursor: pointer;
+  }
 
-.contact-btn:hover::before {
-  transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+  .contact-btn:hover::before {
+    transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+  }
+
+  .repo-link a:hover { color: #2db742; }
+
+  .repo-link:hover{
+    transform-origin: center center;
+    transform: scale(1.1);
+    animation: scale 0.25s ease-in-out forwards;
+    color: #2db742;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -104,14 +120,4 @@ footer{
 }
 
 .repo-link a { color: white; }
-
-.repo-link a:hover { color: #2db742; }
-
-.repo-link:hover{
-  transform-origin: center center;
-  transform: scale(1.1);
-  animation: scale 0.25s ease-in-out forwards;
-  color: #2db742;
-}
-
 </style>

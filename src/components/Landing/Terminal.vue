@@ -50,6 +50,7 @@ export default {
     border-radius: .2em;
     box-shadow: .1px 2px 4px black;
 }
+
 .terminal-header{
     border: .1px solid grey;
     border-top-left-radius: .2em;
@@ -59,32 +60,40 @@ export default {
     height: 18px;
     color: black;
 }
+
 .terminal-icon{
     margin-left: 5px;
 }
+
 .terminal-icon.times { color: #e04f47; }
+
 .terminal-icon.minus { color: #efd25d; }
+
 .terminal-icon.plus { color: #2db742; }
+
 .buttons{
     margin-right: 10px;
 }
+
 .terminal-text{
     font-size: 28px;
     margin-left: 12px;
     margin-top: 10px;
     margin-bottom: 0px;
 }
+
 .result-strings{
     color: #2db742;
     font-size: 20px;
     margin-left: 12px;
     margin-bottom: 0px;
 }
+
 .typed { margin-bottom: 20px; }
 
 @media only screen and (max-width: 600px) {
   .terminal-text{
-    font-size: 16px;
+    font-size: 15px;
   }
   .result-strings{
       font-size: 12px;

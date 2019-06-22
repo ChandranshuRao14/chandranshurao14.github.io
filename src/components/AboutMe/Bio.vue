@@ -22,6 +22,7 @@ export default {
 .bio{
     text-align: left;
 }
+
 .bar{
     margin-top: 0;
     width: 100%;

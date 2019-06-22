@@ -1,15 +1,25 @@
 <template>
     <div class="col-md-5 offset-md-1">
-        <p class="bio-paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+        <p class="bio-paragraph">{{ bio_1 }}</p>
+        <p class="bio-paragraph">{{ bio_2 }}</p>
     </div>
 </template>
 
 <script>
 // imports
+import json from '../../assets/bio-description.json';
 
 export default {
   name: 'BioInfo',
   props: {
+  },
+  computed: {
+    bio_1: function () {
+        return json.paragraph_1
+    },
+    bio_2: function () {
+        return json.paragraph_2
+    }
   }
 }
 </script>

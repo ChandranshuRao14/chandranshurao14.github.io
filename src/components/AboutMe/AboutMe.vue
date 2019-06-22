@@ -37,6 +37,7 @@ export default {
     margin-right: 12px;
     width: 20px;
 }
+
 .cv-btn {
   z-index: 1;
   position: relative;
@@ -68,11 +69,13 @@ export default {
   transition: transform 0.45s ease-in-out;
 }
 
-.cv-btn:hover {
-  cursor: pointer;
-}
+@media (hover: hover) {
+  .cv-btn:hover {
+    cursor: pointer;
+  }
 
-.cv-btn:hover::before {
-  transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+  .cv-btn:hover::before {
+    transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+  }
 }
 </style>

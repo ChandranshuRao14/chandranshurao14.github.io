@@ -33,9 +33,11 @@ export default {
   color: white;
   margin-top: 60px;
 }
+
 .heading{
   text-shadow: 1px 1px black;
 }
+
 body{
   background-color: rgb(88, 123, 153) !important;
 }

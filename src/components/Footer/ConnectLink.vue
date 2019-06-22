@@ -41,22 +41,30 @@ a {
 i {
     font-size: 50px;
 }
-a:hover{
-    text-decoration: none;
-    color: rgb(88, 123, 153);
-    opacity: 1.0;
+
+@media (hover: hover) {
+    a:hover{
+        text-decoration: none;
+        color: rgb(88, 123, 153);
+        opacity: 1.0;
+    }
+
+    a:hover i {
+        transform-origin: center center;
+        animation: scale 0.25s ease-in-out forwards;
+    }
+
+    .icon-black:hover{
+        color: black;
+    }
 }
-a:hover i {
-    transform-origin: center center;
-    animation: scale 0.25s ease-in-out forwards;
-}
+
 @keyframes scale {
   to {
     transform: scale(1.1);
   }
 }
-.icon-black,
-.icon-black:hover{
+.icon-black{
     color: black;
 }
 </style>

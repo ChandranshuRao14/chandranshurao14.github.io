@@ -2,7 +2,6 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -51,7 +50,6 @@ export default {
                 $("#home-nav-link").addClass("active");
             }
 
-            //console.log();
             if(currPos >= $(".home-links").position().top + $(".home-links").height()){
                 $("#mainNav").addClass("dark-nav");
             }
@@ -68,7 +66,13 @@ export default {
 nav {
     transition: 0.4s all;
 }
+
 .dark-nav{
     background-color: #39373a;
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgba(255,255,255,.75) !important;
+    border-color: rgba(255,255,255,.5) !important;
 }
 </style>

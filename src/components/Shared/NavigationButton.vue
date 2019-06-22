@@ -53,7 +53,9 @@ export default {
   transition: transform 0.3s ease-in-out;
 }
 
-.nav-item a:hover::before {
-  transform: translate(-50%, 0) scaleX(1);
+@media (hover: hover) {
+  .nav-item a:hover::before {
+    transform: translate(-50%, 0) scaleX(1);
+  }
 }
 </style>
